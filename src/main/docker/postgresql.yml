@@ -1,0 +1,11 @@
+version: '2'
+services:
+  casamanager-postgresql:
+    image: postgres:11.2
+    # volumes:
+    #     - ~/volumes/jhipster/casaManager/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=casaManager
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432

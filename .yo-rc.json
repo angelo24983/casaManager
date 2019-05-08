@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "it.aguzzo.casamanager",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.0.0",
+    "applicationType": "monolith",
+    "baseName": "casaManager",
+    "packageName": "it.aguzzo.casamanager",
+    "packageFolder": "it/aguzzo/casamanager",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "N2IxMzFmNDc2ZTU4MWFlNDNmZmYyMzcxZmRiMjI3MTgxNTU3YTliMWRlY2NmNDY4YTdkYzE1ODA2ZjczZjQzNzI5ZmFhY2E5ODJlYzFkMDk2M2JmYmZiYjRhZDVmMDUyOWJkMTcxZWY2NDQ2NGZiN2E4MjQwZmZjM2YwMjdjMmI=",
+    "clientFramework": "angularX",
+    "clientTheme": "darkly",
+    "clientThemeVariant": "dark",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "it"]
+  }
+}
