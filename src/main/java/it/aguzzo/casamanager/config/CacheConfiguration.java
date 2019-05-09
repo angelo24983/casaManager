@@ -43,6 +43,11 @@ public class CacheConfiguration {
             createCache(cm, it.aguzzo.casamanager.domain.User.class.getName());
             createCache(cm, it.aguzzo.casamanager.domain.Authority.class.getName());
             createCache(cm, it.aguzzo.casamanager.domain.User.class.getName() + ".authorities");
+            createCache(cm, it.aguzzo.casamanager.domain.Spesa.class.getName());
+            createCache(cm, it.aguzzo.casamanager.domain.Spesa.class.getName() + ".prodottos");
+            createCache(cm, it.aguzzo.casamanager.domain.Prodotto.class.getName());
+            createCache(cm, it.aguzzo.casamanager.domain.Prodotto.class.getName() + ".spesas");
+            createCache(cm, it.aguzzo.casamanager.domain.TipologiaProdotto.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
