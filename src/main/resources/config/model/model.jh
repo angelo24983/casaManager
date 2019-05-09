@@ -1,0 +1,32 @@
+entity Spesa {
+	nome String required minlength(3),
+    data LocalDate
+}
+
+entity Prodotto {
+	nome String required minlength(2),
+    prezzo Long required
+}
+
+entity TipologiaProdotto {
+	nome String required minlength(2),
+	descrizione String required minlength(2)
+}
+
+relationship OneToOne {
+	Prodotto{tipologia(nome)} to TipologiaProdotto
+}
+
+relationship ManyToOne {
+	Spesa{user(login)} to User
+}
+
+relationship ManyToMany{
+	Spesa{prodotto(nome)} to Prodotto{spesa(nome)}
+}
+
+dto * with mapstruct
+
+paginate Spesa, Prodotto, TipologiaProdotto with infinite-scroll
+
+service Spesa, Prodotto with serviceImpl
