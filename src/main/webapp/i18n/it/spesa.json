@@ -1,0 +1,24 @@
+{
+  "casaManagerApp": {
+    "spesa": {
+      "home": {
+        "title": "Spesas",
+        "createLabel": "Genera un nuovo Spesa",
+        "createOrEditLabel": "Genera o modifica un Spesa"
+      },
+      "created": "&Egrave; stato generato un nuovo Spesa con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Spesa identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Spesa con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Spesa {{ id }}?"
+      },
+      "detail": {
+        "title": "Spesa"
+      },
+      "nome": "Nome",
+      "data": "Data",
+      "user": "User",
+      "prodotto": "Prodotto"
+    }
+  }
+}

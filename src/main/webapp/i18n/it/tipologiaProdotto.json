@@ -1,0 +1,22 @@
+{
+  "casaManagerApp": {
+    "tipologiaProdotto": {
+      "home": {
+        "title": "TipologiaProdottos",
+        "createLabel": "Genera un nuovo Tipologia Prodotto",
+        "createOrEditLabel": "Genera o modifica un Tipologia Prodotto"
+      },
+      "created": "&Egrave; stato generato un nuovo Tipologia Prodotto con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Tipologia Prodotto identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Tipologia Prodotto con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Tipologia Prodotto {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipologia Prodotto"
+      },
+      "nome": "Nome",
+      "descrizione": "Descrizione"
+    }
+  }
+}

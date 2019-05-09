@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="prodotto">
+            <h2><span jhiTranslate="casaManagerApp.prodotto.detail.title">Prodotto</span> {{prodotto.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="casaManagerApp.prodotto.nome">Nome</span></dt>
+                <dd>
+                    <span>{{prodotto.nome}}</span>
+                </dd>
+                <dt><span jhiTranslate="casaManagerApp.prodotto.prezzo">Prezzo</span></dt>
+                <dd>
+                    <span>{{prodotto.prezzo}}</span>
+                </dd>
+                <dt><span jhiTranslate="casaManagerApp.prodotto.tipologia">Tipologia</span></dt>
+                <dd>
+                    <div *ngIf="prodotto.tipologiaId">
+                        <a [routerLink]="['/tipologia-prodotto', prodotto.tipologiaId, 'view']">{{prodotto.tipologiaNome}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/prodotto', prodotto.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

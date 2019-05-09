@@ -1,0 +1,41 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="spesa">
+            <h2><span jhiTranslate="casaManagerApp.spesa.detail.title">Spesa</span> {{spesa.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="casaManagerApp.spesa.nome">Nome</span></dt>
+                <dd>
+                    <span>{{spesa.nome}}</span>
+                </dd>
+                <dt><span jhiTranslate="casaManagerApp.spesa.data">Data</span></dt>
+                <dd>
+                    <span>{{spesa.data}}</span>
+                </dd>
+                <dt><span jhiTranslate="casaManagerApp.spesa.user">User</span></dt>
+                <dd>
+                    {{spesa.userLogin}}
+                </dd>
+                <dt><span jhiTranslate="casaManagerApp.spesa.prodotto">Prodotto</span></dt>
+                <dd>
+                    <span *ngFor="let prodotto of spesa.prodottos; let last = last">
+                        <a [routerLink]="['/prodotto', prodotto?.id, 'view' ]">{{prodotto.nome}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/spesa', spesa.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

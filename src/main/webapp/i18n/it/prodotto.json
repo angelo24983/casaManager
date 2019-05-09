@@ -1,0 +1,24 @@
+{
+  "casaManagerApp": {
+    "prodotto": {
+      "home": {
+        "title": "Prodottos",
+        "createLabel": "Genera un nuovo Prodotto",
+        "createOrEditLabel": "Genera o modifica un Prodotto"
+      },
+      "created": "&Egrave; stato generato un nuovo Prodotto con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Prodotto identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Prodotto con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Prodotto {{ id }}?"
+      },
+      "detail": {
+        "title": "Prodotto"
+      },
+      "nome": "Nome",
+      "prezzo": "Prezzo",
+      "tipologia": "Tipologia",
+      "spesa": "Spesa"
+    }
+  }
+}

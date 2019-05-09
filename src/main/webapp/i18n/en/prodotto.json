@@ -1,0 +1,24 @@
+{
+  "casaManagerApp": {
+    "prodotto": {
+      "home": {
+        "title": "Prodottos",
+        "createLabel": "Create a new Prodotto",
+        "createOrEditLabel": "Create or edit a Prodotto"
+      },
+      "created": "A new Prodotto is created with identifier {{ param }}",
+      "updated": "A Prodotto is updated with identifier {{ param }}",
+      "deleted": "A Prodotto is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Prodotto {{ id }}?"
+      },
+      "detail": {
+        "title": "Prodotto"
+      },
+      "nome": "Nome",
+      "prezzo": "Prezzo",
+      "tipologia": "Tipologia",
+      "spesa": "Spesa"
+    }
+  }
+}
